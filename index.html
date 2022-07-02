@@ -57,10 +57,19 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="button" type="button">Заказать услугу</button>
+          <button class="button" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
-
+      <!-- Модальное окно -->
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="modal-close-button" type="button" data-modal-close>
+            <svg width="11" height="11">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
       <!-- Особенности -->
       <section class="section-peculiarities">
         <div class="container">
@@ -115,7 +124,6 @@
       </section>
 
       <!-- Чем мы занимаемся -->
-
       <section class="works">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
@@ -137,7 +145,6 @@
       </section>
 
       <!-- Наша команда -->
-
       <section class="team">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
@@ -550,5 +557,7 @@
         </div>
       </div>
     </footer>
+    <!-- Скрипт для модального окна -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
